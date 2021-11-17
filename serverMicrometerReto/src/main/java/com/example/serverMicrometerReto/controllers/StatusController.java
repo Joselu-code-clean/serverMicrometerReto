@@ -36,6 +36,7 @@ public class StatusController {
 	}
 	
 	@WriteOperation
+	@GetMapping("/writer")
 	public void writeOperation(@Selector String estadoNuevo) {
 		counter.increment();
 		listado.add(estadoNuevo);
