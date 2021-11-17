@@ -43,6 +43,7 @@ public class StatusController {
 	
 	@DeleteOperation
 	public void deleteOperation(@Selector int estadoBorrar) {
+		counter.increment();
 		listado.remove(estadoBorrar);
 	}
 	
